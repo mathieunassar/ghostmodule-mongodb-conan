@@ -28,7 +28,7 @@ class GhostmoduleMongoDbConan(ConanFile):
         git = tools.Git(folder="ghostmodule-mongodb")
         git.clone("https://github.com/mathieunassar/ghostmodule-mongodb.git", "master")
 		
-	def configure(self):
+    def configure(self):
         self.options["mongo-cxx-driver"].shared = True
 
     def build(self):
