@@ -15,6 +15,7 @@ class GhostmoduleMongoDbConan(ConanFile):
     generators = "cmake"
 
     requires = (
+		"OpenSSL/1.0.2r@conan/stable",
         "mongo-cxx-driver/3.3.0@bincrafters/stable",
         "ghostmodule/1.4@mathieunassar/stable",
         "grpc/1.20.0@inexorgame/stable",
