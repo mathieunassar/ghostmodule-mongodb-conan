@@ -25,7 +25,7 @@
 #include <ghost/persistence_mongodb/PersistenceMongoDBExtension.hpp>
 #include <ghost/persistence_mongodb/PersistenceMongoDBExtensionBuilder.hpp>
 
-#include "protobuf/persistency_todo_list.pb.h"
+#include "persistency_todo_list.pb.h"
 
 /***************************
 	TRY IT: Run this program and add or remove your own TODOs.
