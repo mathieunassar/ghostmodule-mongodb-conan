@@ -10,8 +10,8 @@ class GhostmoduleMongoDbConan(ConanFile):
     description = "ghostmodule extension to integrate MongoDB."
     topics = ("framework", "microservice", "command-line", "database", "mongodb")
     settings = "os", "compiler", "build_type", "arch"
-    options = {"shared": [True, False]}
-    default_options = "shared=False"
+    options = {"shared": [True, False], "fPIC": [True, False]}
+    default_options = {"shared": False, "fPIC": True}
     generators = "cmake"
 
     requires = (
