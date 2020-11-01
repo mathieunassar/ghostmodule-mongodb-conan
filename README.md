@@ -7,14 +7,14 @@ _______  _      _  ______  ________ _________      '_' \
 
 # Conan recipe for ghostmodule-mongodb
 
-Lightweight, multiplatform and accessible framework for command line-based programs and C++ microservices.
+ghostmodule (https://github.com/mathieunassar/ghostmodule) extension to integrate MongoDB.
 
 https://github.com/mathieunassar/ghostmodule-mongodb
 
 |     Build system     |                         Build status                         |
 | :------------------: | :----------------------------------------------------------: |
-|  Windows (Appveyor)  | [![Build status](https://ci.appveyor.com/api/projects/status/0qewqv8g3b1epwgu/branch/master?svg=true)](https://ci.appveyor.com/project/mathieunassar/ghostmodule-conan/branch/master) |
-| Linux & OSX (Travis) | [![Build Status](https://travis-ci.com/mathieunassar/ghostmodule-conan.svg?branch=master)](https://travis-ci.com/mathieunassar/ghostmodule-conan) |
+|  Windows (Appveyor)  | [![Build status](https://ci.appveyor.com/api/projects/status/4ka5k6mmpc18d236/branch/master?svg=true)](https://ci.appveyor.com/project/mathieunassar/ghostmodule-mongodb-conan/branch/master) |
+| Linux & OSX (Travis) | [![Build Status](https://travis-ci.com/mathieunassar/ghostmodule-mongodb-conan.svg?branch=master)](https://travis-ci.com/mathieunassar/ghostmodule-mongodb-conan) |
 
 ## Issues
 
@@ -22,12 +22,16 @@ If you wish to report an issue or make a request for a package, please do so her
 
 https://github.com/mathieunassar/ghostmodule/issues
 
+### Known Issues
+
+Some dependencies do not build with Visual Studio 2019: Visual Studio 2017 is functional, though.
+
 ## Usage
 
 The Conan recipe to add to your setup is the following:
 
 ```
-ghostmodule-mongodb/1.4@mathieunassar/testing
+ghostmodule-mongodb/1.0@mathieunassar/stable
 ```
 
 #### Add Remote

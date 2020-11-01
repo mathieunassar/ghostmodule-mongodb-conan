@@ -14,6 +14,7 @@
  * limitations under the License.
  */
 
+#include <iostream>
 #include <bsoncxx/exception/exception.hpp>
 #include <ghost/module/StdoutLogger.hpp>
 #include <ghost/module/Module.hpp>
@@ -77,5 +78,6 @@ int main(int argc, char** argv)
 	if (module) module->start();
 
 	// Start blocks until the module ends.
+	std::cout << "test package completed" << std::endl;
 	return 0;
 }
